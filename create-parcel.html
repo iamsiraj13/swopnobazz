@@ -1,0 +1,201 @@
+    <!DOCTYPE html>  
+  <html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Swopnobaz Express Dashboard</title> 
+  	<link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+  	<link rel="stylesheet" href="assets/css/dashboard.css"> 
+    <link rel="stylesheet" href="assets/css/dashboard-responsive.css">
+  	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <header class="dashboard-header">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="side-info">
+            <p>Swopnobazexpress</p>
+            <p>8801796762456</p>
+          </div>
+          <a href="#">My Shop</a>
+          <a href="#">My Payment Details</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Track Panel</a>
+          <a href="#">Logout</a>
+
+        </div>
+       
+        <div class="container">
+          <div class="row  d-flex align-items-center">
+        
+            <div class="col-6 col-md-3 col-lg-1">
+              <div id="main" class="float-left">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              </div>       
+              <div class="dash-logo">
+                <a href="dashboard.html"><img src="assets/img/logo/Main.png" height="60px" alt=""></a>
+              </div>
+            </div>
+            <div class="d-none d-md-block col-md-7 col-lg-3">
+              <div class="parcel-track">
+                <form action="">
+                  <div class="parcel-input mx-auto">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="পার্সেল ID লিখুন " aria-label="Recipient's username" aria-describedby="button-addon2">
+                      <div class="input-group-appen">
+                        <button class="btn btn-dark" type="button" id="button-addon2">Track Parcel</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            <div class="d-none d-lg-block col-lg-4">
+              <div class="menu">
+                <ul>
+                  <li><a href="dashboard.html">DASHBOARD</a></li>
+                  <li><a href="parcel.html">PARCELS</a></li>
+                  <li><a href="#">PAYMENTS</a></li>
+                </ul>
+                 
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-2">
+              <div class="parcel text-right">
+                <a href="create-parcel.html">CREATE PARCEL</a>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-2">
+              <div class="profile ">
+                
+                <div class="dropdown">
+                  <button class="dropbtn  dropdown-toggle">Dropdown</button>
+                  <div class="dropdown-content">
+                    <a href="shop-list.html">My Shop</a>
+                    <a href="shop-payment.html">My Payment Details</a>
+                    <a href="notification-settings.html">Notification Settings</a>
+                    <a href="#">Coverage Area</a>
+                    <a href="#">Track Parcel</a>
+                    <a href="#">Tutorials</a>
+                    <a href="#">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="parcel-track-link text-right">
+                <a href="parcel.html">Parcel Track</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>  
+  	<main>
+ 		<section class="creat-parcel-area">
+ 			<div class="container">
+ 				<div class="row">
+ 					<div class="col-md-8">
+ 						 <div class="ship-form">
+ 						 	<div class="ship-title">
+ 						 		<h4 class="float-left">Ship Form</h4>
+ 						 		<span><a href="shop-list.html">Choose a different shop</a></span>
+ 						 		<div class="line"></div>
+ 						 	</div>
+ 						 	<div class="ship-head mt-5" style="overflow: hidden">
+ 						 		<div class="srttit float-left">
+ 						 			<h4>নতুন পার্সেল রিক্যুয়েস্ট তৈরি করুন</h4>
+ 						 			<div class="line"></div>
+ 						 		</div>
+ 						 		<div class="ship-btn float-right">
+ 						 			<a href="#" class="btn btn-outline-primary bulk">Create Bulk Parcets</a>
+ 						 			<a href="#" class="btn btn-outline-primary">Import From ShopUp</a>
+ 						 		</div>
+ 						 	</div>
+ 						 	<div class="ship-body mt-5">
+ 						 		<form action="#">
+ 						 			<div class="row">
+ 						 				<div class="col-md-6">
+ 						 					<div class="form-group">
+ 						 						<input class="form-control" type="text" placeholder="কাস্টমারের নাম">
+ 						 					</div>
+ 						 					<div class="form-group">
+ 						 						<input class="form-control" type="text" placeholder="কাস্টমারের ফোন নম্ব্র">
+ 						 					</div>
+ 						 					<div class="form-group">
+ 						 						 <textarea class="form-control" id="" cols="30" rows="5" placeholder="কাস্টমারের ঠিকানা"></textarea>
+ 						 					</div>
+ 						 					<div class="form-group">
+ 						 						<input class="form-control" type="text" placeholder="মার্চেন্ট ইনভয়েস আইডি">
+ 						 					</div>
+ 						 				</div>
+
+ 						 				<div class="col-md-6">
+ 						 					<div class="form-group">
+ 						 						<input class="form-control" type="text" placeholder="500gm">
+ 						 					</div>
+ 						 					<div class="form-group">
+ 						 						<input class="form-control" type="text" placeholder="ক্যাশ কালেকশন অ্যাামাউন্ট">
+ 						 					</div>
+ 						 					
+ 						 					<div class="form-group">
+ 						 						<input class="form-control" type="text" placeholder="পন্যের বিক্র্য মুল্য">
+ 						 					</div>
+ 						 					<div class="form-group">
+ 						 						 <textarea class="form-control" id="" cols="30" rows="5" placeholder="কোন বিশেষ নির্দেশনা"></textarea>
+ 						 					</div>
+ 						 				</div>
+ 						 				<div class="form-btn text-center">
+ 						 					<a href="#" class="btn btn-outline-primary"  >পার্সেল তৈরি করুন </a>
+ 						 				</div>
+ 						 				 
+ 						 			</div>
+ 						 		</form>
+ 						 	</div>
+ 						 </div>
+ 					</div>
+ 					<div class="col-md-4 d-none d-md-block" style="background-color: #F5F5F5">
+ 						 <div class="amount-details p-5" >
+ 						 	<div class="amount-info" style="display:flex; justify-content: space-between;">
+ 						 		<p>Cash Collection</p>
+ 						 		<p>Tk 0</p>
+ 						 	</div>
+ 						 	<div class="amount-info" style="display:flex; justify-content: space-between;">
+ 						 		<p>Delyvery Charge</p>
+ 						 		<p>Tk 0</p>
+ 						 	</div>
+ 						 	<div class="amount-info" style="display:flex; justify-content: space-between;">
+ 						 		<p>COD Charge</p>
+ 						 		<p>Tk. 0.00</p>
+ 						 	</div>
+              <div class="divider"></div>
+ 						 	<div class="amount-info" style="display:flex; justify-content: space-between;">
+ 						 		<p>Total Payable Amount</p>
+ 						 		<p>Tk. 0</p>
+ 						 	</div>
+ 						 </div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</section>
+    <footer class="dash-footer ">
+      <div class="footer-fixed-menu">
+         <ul>
+            <li><a href="dashboard.html" class="dash">Dashboard</a></li>
+            <li><a href="create-parcel.html">Create Parcel</a></li>
+            <li><a href="parcel.html">Parcel</a></li>
+            <li><a href="payments.html">Payments</a></li>
+          </ul> 
+      </div>
+    </footer>
+  	</main>
+
+
+ 	<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+ 	<script src="assets/js/custom.js"></script>
+ 	<script src="assets/js/poper.min.js"></script>
+ 	<script src="assets/js/bootstrap.min.js"></script>
+  
+  </body>
+  </html>

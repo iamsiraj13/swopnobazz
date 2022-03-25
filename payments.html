@@ -1,0 +1,209 @@
+    <!DOCTYPE html>  
+  <html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Swopnobaz Express Dashboard</title> 
+  	<link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+  	<link rel="stylesheet" href="assets/css/dashboard.css"> 
+    <link rel="stylesheet" href="assets/css/dashboard-responsive.css">
+  	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+      <header class="dashboard-header">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="side-info">
+            <p>Swopnobazexpress</p>
+            <p>8801796762456</p>
+          </div>
+          <a href="#">My Shop</a>
+          <a href="#">My Payment Details</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Track Panel</a>
+          <a href="#">Logout</a>
+
+        </div>
+       
+        <div class="container">
+          <div class="row  d-flex align-items-center">
+        
+            <div class="col-6 col-md-3 col-lg-1">
+              <div id="main" class="float-left">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              </div>       
+              <div class="dash-logo">
+                <a href="dashboard.html"><img src="assets/img/logo/Main.png" height="60px" alt=""></a>
+              </div>
+            </div>
+            <div class="d-none d-md-block col-md-7 col-lg-3">
+              <div class="parcel-track">
+                <form action="">
+                  <div class="parcel-input mx-auto">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="পার্সেল ID লিখুন " aria-label="Recipient's username" aria-describedby="button-addon2">
+                      <div class="input-group-appen">
+                        <button class="btn btn-dark" type="button" id="button-addon2">Track Parcel</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            <div class="d-none d-lg-block col-lg-4">
+              <div class="menu">
+                <ul>
+                  <li><a href="dashboard.html">DASHBOARD</a></li>
+                  <li><a href="parcel.html">PARCELS</a></li>
+                  <li><a href="#">PAYMENTS</a></li>
+                </ul>
+                 
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-2">
+              <div class="parcel text-right">
+                <a href="create-parcel.html">CREATE PARCEL</a>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-2">
+              <div class="profile ">
+                
+                <div class="dropdown">
+                  <button class="dropbtn  dropdown-toggle">Dropdown</button>
+                  <div class="dropdown-content">
+                    <a href="shop-list.html">My Shop</a>
+                    <a href="shop-payment.html">My Payment Details</a>
+                    <a href="notification-settings.html">Notification Settings</a>
+                    <a href="#">Coverage Area</a>
+                    <a href="#">Track Parcel</a>
+                    <a href="#">Tutorials</a>
+                    <a href="#">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="parcel-track-link text-right">
+                <a href="parcel.html">Parcel Track</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>  
+  	<main>
+  		 <section class="parcel-area">
+  		 	<div class="parcel-table">
+  		 		<div class="container">
+  		 			<div class="row mt-4">
+              <div class="col-8 col-lg-6">
+                <div class="table-head">
+                  <h4>Payments Summary</h4>
+                  <div class="line"></div> 
+                </div>
+              </div>
+              <div class="col-lg-6 d-none d-lg-block">
+                <div class="payment-form">
+                  <form action="">
+                    <div class="row">
+                      <div class="col">
+                          <input type="date" class="form-control" placeholder="Start date">
+                      </div>
+                      <div class="col">
+                          <input type="date" class="form-control" placeholder="End date">
+                      </div>
+                      <div class="col">
+                          <input type="submit" class="btn btn-outline-primary" value="Search">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-4 d-lg-none text-right">
+                <a type="button"  data-toggle="modal" data-target="#staticBackdrop"> 
+                  Search
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Search</h5> 
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                         <form> 
+                           <div class="form-group row">
+                             <label for="inputPassword" class="col-sm-4 col-form-label">Start date</label>
+                             <div class="col-sm-8">
+                               <input type="date" class="form-control" id="inputPassword">
+                             </div>
+                           </div>
+                           <div class="form-group row">
+                             <label for="inputPassword" class="col-sm-4 col-form-label">End date</label>
+                             <div class="col-sm-8">
+                               <input type="date" class="form-control" id="inputPassword">
+                             </div>
+                           </div>
+                           <div class="form-group row">
+                              
+                             <div class="col-12">
+                               <input type="submit" class="btn btn-dark" value="Search">
+                             </div>
+                           </div>
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-lg-12 d-none d-lg-block">
+                <table class="table table-striped">
+                  <tr>
+                    <td>Invoice ID</td>
+                    <td>Invoice Date</td>
+                    <td>Cash Collection (Tk.)</td>
+                    <td>Delivery Charge (Tk.)</td>
+                    <td>COD Charge (Tk.)</td>
+                    <td>Return Charge (Tk.)  </td>
+                    <td>Adjustments (Tk.)</td>
+                    <td>Amount Paid Out (Tk.)  </td>
+                    <td>Download  </td> 
+                  </tr> 
+                </table>
+              </div>
+            </div>
+  		 		</div>
+  		 	</div>
+  		 </section>
+       <footer class="dash-footer">
+         <div class="footer-fixed-menu">
+            <ul>
+               <li><a href="dashboard.html" class="dash">Dashboard</a></li>
+               <li><a href="create-parcel.html">Create Parcel</a></li>
+               <li><a href="parcel.html">Parcel</a></li>
+               <li><a href="payments.html">Payments</a></li>
+             </ul> 
+         </div>
+       </footer>
+  	</main>
+
+
+ 	<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+ 	<script src="assets/js/custom.js"></script>
+ 	<script src="assets/js/poper.min.js"></script>
+ 	<script src="assets/js/bootstrap.min.js"></script>
+  
+  </body>
+  </html>

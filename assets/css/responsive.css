@@ -1,0 +1,342 @@
+ @media only screen and (min-width: 1200px) {
+   .hero-area{
+   	height:400px; 
+   }
+
+   .hero-text{
+ 	width: 72%;
+ 	margin-top: 77px;
+ 	margin-left: 65%;
+ 	transform: translateX(-44%);
+	}
+	.hero-text h2{
+		line-height:1.5;
+		margin-bottom: 30px; 
+	}
+	.hero-text P{
+		padding-right: 20px;
+	}
+	.banner{
+		width:76%;
+		max-height:400px;
+	}
+	.banner img{
+		width:92%;
+		height:100%;
+		margin-left: -66px;
+	}
+  .shape1 img{
+    width:220px;
+   }
+  .shape2 img{
+    width:220px;
+   }
+
+
+
+}
+ @media only screen and (max-width: 1199px) {
+   
+  .shape1 img{
+    width:200px;
+   }
+  .shape2 img{
+    width:200px;
+   }
+ .hero-area{
+ 	height:400px; 
+ }
+
+  .hero-text {
+      width: 84%;
+      margin-top: 68px;
+      margin-left: 65%;
+      transform: translateX(-44%);
+  }
+  	.hero-text h2{
+  		line-height:1.5;
+  		margin-bottom: 30px; 
+  	}
+  	.hero-text P{
+  		padding-right: 20px;
+  	}
+
+  	.banner{
+  		width:76%;
+  		max-height:400px;
+  	}
+  	.banner img {
+  	    width: 106%;
+  	    height: 100%;
+  	    margin-left: 14px;
+  	    margin-top: 33px;
+  	}
+  	.widget-box{
+  		padding-left: 0;
+  		padding-right: 0;
+  	}
+  	.widget-box p{
+  		font-size:15PX;
+  	}
+
+
+   	
+}
+ @media only screen and (max-width: 891px) {
+ 
+ .shape1 img{
+   width:121px;
+  }
+ .shape2 img{
+   width:121px;
+  }
+ .hero-area{
+ 	height:312px; 
+ }
+
+  .hero-text {
+      width: 114%;
+      margin-top: 50px;
+      margin-left: 65%;
+      transform: translateX(-37%);
+  }
+  .hero-text h2 {
+      line-height: 1.5;
+      margin-bottom: 30px;
+      font-size: 24px;
+  }
+  	.hero-text P {
+  	    padding-right: 76px;
+  	    font-size: 18px;
+  	}
+
+  	.banner{
+  		width:76%;
+  		max-height:400px;
+  	}
+  	.banner img {
+  	    width: 106%;
+  	    height: 100%;
+  	    margin-left: 14px;
+  	    margin-top: 33px;
+  	}
+  	.parcel-wrapper{  
+  		width:100%;
+  		margin:0 auto;
+  		padding:25px 0;
+  		margin-top: -50px;
+  	}
+  	.parcel-wrapper input {
+	    padding: 12px;
+	    margin-right: -2px;
+	}
+	.parcel-wrapper button {
+	    padding: 6px 33px;
+	    background-color: red;
+	}
+	.widget-box p{
+  		font-size:13PX;
+  	}
+    .table-body{
+      overflow-x: scroll;
+    }
+
+
+
+}
+ @media only screen and (max-width:767px) {
+  .shape1 img{
+    display:none;
+   }
+  .shape2 img{
+   display:none;
+   }
+  .login-form .log-btn {
+      font-size: 9px !important;
+  }
+  .header-area{
+    padding:6px 0;
+  }
+  main{
+    padding-top: 60px;
+  }
+  .log-area{
+    height:400px;
+    background-color: #F5F5F5;
+  }
+  .login-title h2 { 
+    font-size: 18px;
+}
+  .login-title p{
+    font-size:13px;
+  }
+  .login-form span {
+      font-size: 11px;
+      padding: 5px 4px;
+  }
+ 	 .hero-area{
+ 		height:312px; 
+ 	}
+ 	.hero-text {
+ 	    width: 70%;
+ 	    margin-top: 31px;
+ 	    margin-left: 65%;
+ 	    transform: translateX(-86%);
+ 	}
+ 	 .hero-text h2 {
+ 	     line-height: 1.5;
+ 	     margin-bottom: 30px;
+ 	     font-size: 20px;
+ 	 }
+ 	 	.hero-text P { 
+ 	 		padding-right:10px;
+ 	 	    font-size: 15px;
+ 	 	}
+
+ 	 	.banner{
+ 	 		display:none;
+ 	 	}
+ 	 	.banner img{
+ 	 		display:none;
+ 	 	}
+  .service-box{
+  	padding-left: 0;
+  	padding-right: 0;
+  	margin-bottom: 45px;
+  }
+  .service-title h2{
+  	font-size:20px;
+  }
+  .service-title p{
+  	font-size:16px;
+  }
+  .service-box img{
+  	width:50%;
+  }
+  .service-box h2{
+  	font-size:15px;
+  }
+  .service-box p{
+  	font-size:12px;
+  }
+
+  .list-title h2{
+  	font-size:18px;
+  	margin-bottom: 20px;
+  }
+  .list-title p{
+  	font-size:12px;
+  }
+  .list-title a {
+      padding: 7px 34px;
+      font-size: 12px;
+      font-weight: bold;
+  }
+  .widget-box{
+  	padding-left: 0;
+  	padding-right: 0;
+  }
+  .widget-box h2{
+  	font-size:15px;
+
+  }
+  .widget-box ul li { 
+    font-size: 11px;
+}
+  .widget-box img{
+  	width:100%;
+  }
+
+  .calcualte-btn a {
+      padding: 8px 20px;
+      font-size: 9px;
+      margin: 0 4px;
+  }
+  .calculation h2 { 
+    font-size: 18px;
+}
+.slidecontainer p{
+	font-size:14px;
+}
+.slidecontainer {
+    width: 100%;  
+    padding: 0 20px;
+}
+.slider{
+	width:100%;
+}
+.login-title{
+  text-align:center;
+  margin-bottom: 40px;
+}
+.login-title .line{
+  margin:10px auto;
+}
+.signup-title{
+  text-align:center;
+}
+.signup-title h2{
+  font-size:18px;
+}
+.signup-title p{
+  font-size:13px;
+}
+ .auto{
+  margin:15px auto;
+
+ }
+
+ .signup-form p{
+  font-size:13px;
+ }
+
+ .table-btn a{
+  float:none;
+  margin-top: 20px;
+  display:inline-block;
+  font-size:13px;
+  font-weight:bold;
+ }
+.table-title h2{
+  margin-bottom: 20px;
+  font-size:18px;
+}
+} 
+ @media only screen and (max-width:350px) {
+ 	.hero-area{
+ 		height:300px; 
+ 	}
+ 	.parcel-wrapper h2{
+ 		font-size:14px;
+ 	}
+ 	.parcel-input{
+ 		width:94%;
+ 	}
+ 	 .parcel-wrapper input {
+	    padding: 12px;
+	    margin-right: -2px;
+	}
+	.parcel-wrapper button {
+	    padding: 6px 33px;
+	    background-color: red;
+	}
+	.parcel-wrapper button {
+	    padding: 6px 17px; 
+	}
+	.list-title {
+    width: 104%; 
+}
+.widget-box p {
+    font-size: 9px;
+}
+.calcualte-btn a {
+    padding: 8px 20px;
+    font-size: 9px;
+    margin: 0;
+}
+
+.nav-btn a {
+    font-size: 12px; 
+    margin: 0 5px; 
+}
+ }
